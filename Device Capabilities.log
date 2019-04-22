@@ -1,0 +1,216 @@
+
+40
+    //*****************
+41
+    /***********
+42
+    section("Allow lights on between what times?") {
+43
+        input "fromTime", "time", title: "From", required: true
+44
+        input "toTime", "time", title: "To", required: true
+45
+    }
+46
+    ******/
+47
+    section("Virtual Room Switch Device?") {
+48
+        input "theRoomSwitchSelector", "capability.switch", required: true
+49
+    }
+Logs
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ===================================
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ---- All Supported Commands -----
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: addSecondsRemaining
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setSecondsRemaining
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setDimmerOverride
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: changeSelectedScene
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug -------------------
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Sound Sensor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Actuator
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Sensor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Button
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch Level
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Presence Sensor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Current state is: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug checkDeviceCapability for VirtualRoom
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ++++++++++++++++++++++++
+
+
+
+
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ===================================
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setAdjustedColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug -------------------
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Light
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Health Check
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Temperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch Level
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Current state is: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ======= Current state for device 2 is: off =========
+
+
+
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ===================================
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ---- All Supported Commands -----
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setAdjustedColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug -------------------
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Light
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Health Check
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Temperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Actuator
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Sensor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Control
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setSaturation
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setHue
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch Level
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Current state is: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ===================================
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ---- All Supported Commands -----
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setAdjustedColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug -------------------
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Temperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Actuator
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setSaturation
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setHue
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Current state is: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ======= Current state for device 1 is: on =========
+
+
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ===================================
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ---- All Supported Commands -----
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setAdjustedColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setSaturation
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setHue
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug -------------------
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Light
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Health Check
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Temperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Actuator
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Sensor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Control
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setSaturation
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setHue
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch Level
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Current state is: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ===================================
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ---- All Supported Commands -----
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug -------------------
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Light
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Health Check
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Temperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Actuator
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Sensor
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch Level
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Current state is: off
+
+
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug ---- All Supported Commands -----
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: ping
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Color Temperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setColorTemperature
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: refresh
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch Level
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: setLevel
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Capability name: Switch
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: off
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug         Command name: on
+fd5dc355-0479-49c5-ae0f-a71c5d06d50e 1:58:59 PM: debug Current state is: off
